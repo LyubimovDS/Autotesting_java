@@ -25,5 +25,7 @@ public class Second_test {
 
 
         $(byXpath("//li[text()=\" Сделать что-то\"]")).shouldNotBe();
+
+        // $(byXpath("//li[text()=\" Сделать что-то\"]")).should(disappear);  или так
     }
 }
