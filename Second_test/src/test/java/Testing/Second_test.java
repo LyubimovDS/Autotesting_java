@@ -24,7 +24,7 @@ public class Second_test {
         $x("//li[text()=\" Сделать что-то\"]//span").hover().click();
 
 
-        $x("//li[text()=\" Сделать что-то\"]").shouldNotBe();
+        $x("//li[text()=\" Сделать что-то\"]").shouldNotBe(exist);
 
         // $x("//li[text()=\" Сделать что-то\"]").should(disappear);  или так
     }
