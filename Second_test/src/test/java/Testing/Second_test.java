@@ -24,8 +24,8 @@ public class Second_test {
         $x("//li[text()=\" Сделать что-то\"]//span").hover().click();
 
 
-        $(byXpath("//li[text()=\" Сделать что-то\"]")).shouldNotBe();
+        $x("//li[text()=\" Сделать что-то\"]").shouldNotBe();
 
-        // $(byXpath("//li[text()=\" Сделать что-то\"]")).should(disappear);  или так
+        // $x("//li[text()=\" Сделать что-то\"]").should(disappear);  или так
     }
 }
