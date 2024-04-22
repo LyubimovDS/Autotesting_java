@@ -19,6 +19,7 @@ public class Second_test {
 
 
         $x("//li[@class=\"completed\"]").shouldBe(exist);
+        //  $x("//li[text()=\" Сделать что-то\"]").shouldHave(attribute("class","completed")); более правильно
 
 
         $x("//li[text()=\" Сделать что-то\"]//span").hover().click();
