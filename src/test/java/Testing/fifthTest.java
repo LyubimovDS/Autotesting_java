@@ -1,6 +1,6 @@
 package Testing;
 
-import com.codeborne.selenide.Condition;
+
 import com.codeborne.selenide.ElementsCollection;
 import org.junit.jupiter.api.Test;
 
@@ -30,12 +30,9 @@ class fifthTest {
     @Test
     public void workingWithAlerts() {
 
-
-        HashMap<String, List<String>> mainMap = createReferenceMap();
-
         open("https://demoqa.com/books");
 
-        for (Map.Entry<String, List<String>> item : mainMap.entrySet()) {
+        for (Map.Entry<String, List<String>> item : createReferenceMap().entrySet()) {
 
             String key = item.getKey();                     // Получаем ключ
             String author = item.getValue().get(0);         // Получаем 1 значение листа
