@@ -38,8 +38,8 @@ class fifthTest {
         for (Map.Entry<String, List<String>> item : mainMap.entrySet()) {
 
             String key = item.getKey();                     // Получаем ключ
-            String author = item.getValue().get(0);         // Получаем значение листа 1
-            String publisher = item.getValue().get(1);      // Получаем значение листа 2
+            String author = item.getValue().get(0);         // Получаем 1 значение листа
+            String publisher = item.getValue().get(1);      // Получаем 2 значение листа
             ElementsCollection cell = $$("[role='row']").findBy(text(key)).$$("[role='gridcell']");
 
             assertEquals(author, cell.get(2).getText());
