@@ -1,51 +1,22 @@
-package Testing;
+/*package Testing;
 
-import org.openqa.selenium.Alert;
-
-
-import static com.codeborne.selenide.Condition.text;
-import static com.codeborne.selenide.Selenide.*;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.List;
 
 
 public class methods {
-    public void closeAlert(){
+    public void checkAuthorAndPublisher(){
 
-        $("#button4").click();
+        Map map = new Map();
 
+        for(map.mainMap.Entry<String, List<String>> item : map.mainMap.entrySet()){
 
-        Alert alert = switchTo().alert();
-
-
-        assertEquals("Press a button!", alert.getText());
-
-
-        alert.dismiss();
+            String key = entry.getKey();         // Получаем ключ
+            Integer value = entry.getValue();    // Получаем значение
 
 
-        $("#confirm-alert-text").shouldHave(text("You pressed Cancel!"));
 
-
-        sleep(1000);
+        }
 
     }
-
-    public void okAlert(){
-
-        $("#button4").click();
-
-
-        Alert alert = switchTo().alert();
-
-
-        assertEquals("Press a button!", alert.getText());
-
-
-        alert.accept();
-
-
-        $("#confirm-alert-text").shouldHave(text("You pressed OK!"));
-
     }
-
-    }
+*/
