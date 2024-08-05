@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f8237e5-18c2-4131-9b66-672e9012c03d" name="Changes" comment="fourthTest">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Testing/fifthTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testing/fourthTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testing/methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testing/methods.java" afterDir="false" />
-    </list>
+    <list default="true" id="2f8237e5-18c2-4131-9b66-672e9012c03d" name="Changes" comment="fifthTest" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +33,8 @@
     "JUnit.fourthTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "fifth-test",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.general"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -72,10 +67,33 @@
       <option name="project" value="LOCAL" />
       <updated>1720415546052</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fifthTest">
+      <option name="closed" value="true" />
+      <created>1722841674210</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722841674210</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -100,6 +118,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fourthTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="fourthTest" />
+    <MESSAGE value="fifthTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="fifthTest" />
   </component>
 </project>
