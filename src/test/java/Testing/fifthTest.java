@@ -10,7 +10,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 class Map {
 
-    @org.jetbrains.annotations.NotNull
     public static HashMap<String, List<String>> createReferenceMap(){
 
         HashMap<String, List<String>> mainMap = new HashMap<>();
