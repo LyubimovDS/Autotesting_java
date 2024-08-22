@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2f8237e5-18c2-4131-9b66-672e9012c03d" name="Changes" comment="fifthTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testing/fifthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testing/fifthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testing/fifthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testing/sixthtest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testing/methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testing/methods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,10 +17,25 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="fifth-test" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LyubimovDS&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/LyubimovDS/Autotesting_java.git&quot;,
+    &quot;accountId&quot;: &quot;a35cc4ce-fe78-4c0d-9dbb-61cd3938beaa&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -35,8 +51,10 @@
   "keyToString": {
     "JUnit.fifthTest.executor": "Run",
     "JUnit.fourthTest.executor": "Run",
+    "JUnit.sixthtest.executor": "Run",
+    "JUnit.sixthtest.workingWithWindow.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "fifth-test",
+    "git-widget-placeholder": "sixth-test",
     "kotlin-language-version-configured": "true",
     "settings.editor.selected.configurable": "preferences.general"
   }
@@ -119,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722852512296</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fifthTest">
+      <option name="closed" value="true" />
+      <created>1722854366964</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1722854366964</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,5 +190,15 @@
     <MESSAGE value="fourthTest" />
     <MESSAGE value="fifthTest" />
     <option name="LAST_COMMIT_MESSAGE" value="fifthTest" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.UnsupportedOperationException" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
