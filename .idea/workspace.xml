@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f8237e5-18c2-4131-9b66-672e9012c03d" name="Changes" comment="sixthTest">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testing/methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testing/methods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Testing/sixthtest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testing/sixthtest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +33,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -153,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724302980277</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="sixthTest">
+      <option name="closed" value="true" />
+      <created>1724322090759</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1724322090759</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

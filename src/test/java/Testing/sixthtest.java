@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
 
-class sixthtest {
+class sixthTest {
 
     @Test
     public void workingWithWindow() {
