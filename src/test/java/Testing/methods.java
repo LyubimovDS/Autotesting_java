@@ -40,9 +40,6 @@ public class methods {
         $("#salary").val(map.get("Salary"));
         $("#department").val(map.get("Department"));
         $("#submit").click();
-
-        checkCharacter(map);
-
     }
 
     public static void checkCharacter(HashMap<String, String> map){

@@ -3,6 +3,9 @@ package Testing;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.HashMap;
+
+import static com.codeborne.selenide.Condition.exist;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
@@ -14,22 +17,30 @@ class sixthTest {
 
         open("https://demoqa.com/webtables");
 
-        $("#addNewRecordButton").click();
-        methods.createCharacter(data.createMap(
+        HashMap <String, String> mainMap = data.createMap(
                 "Имя",
                 "Фамилия",
                 "soma@mail.ru",
                 "18",
                 "1000",
-                "Some Department"));
-        $$("[role='row']").findBy(text("Имя")).$("[title='Edit']").click();
-        methods.createCharacter(data.createMap(
+                "Some Department");
+        HashMap <String, String> replasmentMap = data.createMap(
                 "Другое Имя",
                 "Другая Фамилия",
                 "Other@mail.ru",
                 "20",
                 "2000",
-                "Other Department"));
-        $$("[role='row']").findBy(text("Другое Имя")).$("[title='Delete']").click();
+                "Other Department");
+
+        $("#addNewRecordButton").click();
+        methods.createCharacter(mainMap);
+        methods.checkCharacter(mainMap);
+
+        $$("[role='row']").findBy(text(mainMap.get("First Name"))).$("[title='Edit']").click();
+        methods.createCharacter(replasmentMap);
+        methods.checkCharacter(replasmentMap);
+
+        $$("[role='row']").findBy(text(replasmentMap.get("First Name"))).$("[title='Delete']").click();
+        $$("[role='row']").findBy(text(replasmentMap.get("First Name"))).shouldNotBe(exist);
     }
 }
