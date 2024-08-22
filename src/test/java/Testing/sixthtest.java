@@ -6,7 +6,6 @@ import org.junit.jupiter.api.Test;
 import java.util.HashMap;
 
 import static com.codeborne.selenide.Condition.exist;
-import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
 
@@ -36,11 +35,11 @@ class sixthTest {
         methods.createCharacter(mainMap);
         methods.checkCharacter(mainMap);
 
-        $$("[role='row']").findBy(text(mainMap.get("First Name"))).$("[title='Edit']").click();
+        abbreviation.path(mainMap).$("[title='Edit']").click();
         methods.createCharacter(replasmentMap);
         methods.checkCharacter(replasmentMap);
 
-        $$("[role='row']").findBy(text(replasmentMap.get("First Name"))).$("[title='Delete']").click();
-        $$("[role='row']").findBy(text(replasmentMap.get("First Name"))).shouldNotBe(exist);
+        abbreviation.path(replasmentMap).$("[title='Delete']").click();
+        abbreviation.path(replasmentMap).shouldNotBe(exist);
     }
 }

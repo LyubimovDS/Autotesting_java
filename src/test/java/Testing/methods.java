@@ -1,6 +1,9 @@
 package Testing;
 
 import com.codeborne.selenide.ElementsCollection;
+import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.SelenideElement;
+import org.openqa.selenium.WebElement;
 
 import java.util.HashMap;
 
@@ -10,6 +13,11 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+class abbreviation {
+    public static SelenideElement path (HashMap<String,String> map){
+        return $$("[role='row']").findBy(text(map.get("First Name")));
+    }
+}
 class data {
     public static HashMap<String, String> createMap(String firstName,
                                                         String lastName,
