@@ -2,7 +2,7 @@ package Testing;
 
 import com.codeborne.selenide.ElementsCollection;
 
-import java.util.List;
+import java.util.HashMap;
 
 
 import static com.codeborne.selenide.Condition.text;
@@ -10,31 +10,60 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+class data {
+    public static HashMap<String, String> createMap(String firstName,
+                                                        String lastName,
+                                                        String email,
+                                                        String age,
+                                                        String salary,
+                                                        String department) {
+        HashMap<String, String> map = new HashMap<>();
+
+        map.put("First Name", firstName);
+        map.put("Last Name", lastName);
+        map.put("Email", email);
+        map.put("Age", age);
+        map.put("Salary", salary);
+        map.put("Department", department);
+
+        return map;
+    }
+}
 
 public class methods {
-    public static void createCharacter(List<String> list){
+    public static void createCharacter(HashMap<String, String> map){
 
-        $(list.get(0)).click();
-        $("#firstName").val(list.get(1));
-        $("#lastName").val(list.get(2));
-        $("#userEmail").val(list.get(3));
-        $("#age").val(list.get(4));
-        $("#salary").val(list.get(5));
-        $("#department").val(list.get(6));
+        $("#firstName").val(map.get("First Name"));
+        $("#lastName").val(map.get("Last Name"));
+        $("#userEmail").val(map.get("Email"));
+        $("#age").val(map.get("Age"));
+        $("#salary").val(map.get("Salary"));
+        $("#department").val(map.get("Department"));
         $("#submit").click();
 
-        //checkCharacter(list);
+        checkCharacter(map);
+
     }
 
-    public static void checkCharacter(List<String> list){
-        ElementsCollection item = $$("[role='row']").findBy(text(list.get(1))).$$("[role='gridcell']");
-        String temp = list.get(3);
-        list.set(3, list.get(4));
-        list.set(4, temp);
+    public static void checkCharacter(HashMap<String, String> map){
+        ElementsCollection character = $$("[role='row']").findBy(text(map.get("First Name"))).$$("[role='gridcell']");
 
-        for (int i = 1; i < list.size(); i++) {
-            assertEquals(list.get(i), item.get(i-1).getText());
-            System.out.println(list.get(i) + " = " + item.get(i-1).getText());
+        System.out.println(map.get("First Name") + " = " + character.get(0).getText());
+        System.out.println(map.get("Last Name") + " = " + character.get(1).getText());
+        System.out.println(map.get("Email") + " = " + character.get(3).getText());
+        System.out.println(map.get("Age") + " = " + character.get(2).getText());
+        System.out.println(map.get("Salary") + " = " + character.get(4).getText());
+        System.out.println(map.get("Department") + " = " + character.get(5).getText());
+
+        assertEquals(map.get("First Name"), character.get(0).getText());
+        assertEquals(map.get("Last Name"), character.get(1).getText());
+        assertEquals(map.get("Email"), character.get(3).getText());
+        assertEquals(map.get("Age"), character.get(2).getText());
+        assertEquals(map.get("Salary"), character.get(4).getText());
+        assertEquals(map.get("Department"), character.get(5).getText());
+
+
         }
-    }
+
+
 }

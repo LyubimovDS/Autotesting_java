@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f8237e5-18c2-4131-9b66-672e9012c03d" name="Changes" comment="fifthTest">
+    <list default="true" id="2f8237e5-18c2-4131-9b66-672e9012c03d" name="Changes" comment="sixthTest">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testing/fifthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testing/sixthtest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Testing/methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testing/methods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testing/sixthtest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testing/sixthtest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +145,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722854366964</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="sixthTest">
+      <option name="closed" value="true" />
+      <created>1724302980277</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1724302980277</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,7 +197,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fourthTest" />
     <MESSAGE value="fifthTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="fifthTest" />
+    <MESSAGE value="sixthTest" />
+    <option name="LAST_COMMIT_MESSAGE" value="sixthTest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
