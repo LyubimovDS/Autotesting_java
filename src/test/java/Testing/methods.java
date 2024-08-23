@@ -1,10 +1,6 @@
 package Testing;
 
 import com.codeborne.selenide.ElementsCollection;
-import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.SelenideElement;
-import org.openqa.selenium.WebElement;
-
 import java.util.HashMap;
 
 
@@ -13,11 +9,8 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class abbreviation {
-    public static SelenideElement path (HashMap<String,String> map){
-        return $$("[role='row']").findBy(text(map.get("First Name")));
-    }
-}
+
+
 class data {
     public static HashMap<String, String> createMap(String firstName,
                                                         String lastName,
@@ -39,6 +32,9 @@ class data {
 }
 
 public class methods {
+
+    public static ElementsCollection row = $$("[role='row']");
+
     public static void createCharacter(HashMap<String, String> map){
 
         $("#firstName").val(map.get("First Name"));
@@ -51,7 +47,7 @@ public class methods {
     }
 
     public static void checkCharacter(HashMap<String, String> map){
-        ElementsCollection character = $$("[role='row']").findBy(text(map.get("First Name"))).$$("[role='gridcell']");
+        ElementsCollection character = row.findBy(text(map.get("First Name"))).$$("[role='gridcell']");
 
         System.out.println(map.get("First Name") + " = " + character.get(0).getText());
         System.out.println(map.get("Last Name") + " = " + character.get(1).getText());
