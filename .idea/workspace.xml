@@ -5,19 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f8237e5-18c2-4131-9b66-672e9012c03d" name="Changes" comment="sixthTest">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Testing/UserProfile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testing/methods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testing/methods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Testing/sixthtest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testing/sixthtest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testing/methods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testing/sixthtest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="fifth-test" />
+        <entry key="$PROJECT_DIR$" value="sixth-test" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,19 +56,25 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.fifthTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.fourthTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.sixthTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.sixthtest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.sixthtest.workingWithWindow.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;sixth-test&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Person.executor": "Run",
+    "Application.UserProfile.executor": "Run",
+    "JUnit.UserProfile.chekdata.executor": "Debug",
+    "JUnit.UserProfile.executor": "Run",
+    "JUnit.fifthTest.executor": "Run",
+    "JUnit.fourthTest.executor": "Run",
+    "JUnit.seventhTest.executor": "Run",
+    "JUnit.sixthTest.executor": "Run",
+    "JUnit.sixthtest.executor": "Run",
+    "JUnit.sixthtest.workingWithWindow.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "seventh-test",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/diman/Downloads/11 файлов на 550 мб/1.png",
+    "settings.editor.selected.configurable": "preferences.general"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\diman\IdeaProjects\Autotesting_java" />
@@ -186,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724326872647</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="sixthTest">
+      <option name="closed" value="true" />
+      <created>1724424283865</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1724424283865</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
