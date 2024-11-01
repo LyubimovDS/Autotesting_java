@@ -13,23 +13,23 @@ public class StepDefinitions {
     @Given("открыть страницу")
     public void openSite(){test.openSite();}
 
-    @And("ввести имя задачи и сохранить задачу")
-    public void printNameTask(){test.printNameTask();}
+    @And("ввести имя задачи {string} и сохранить задачу")
+    public void printNameTask(String nameTask){test.printNameTask(nameTask);}
 
-    @Then("проверить наличие созданной задачи")
-    public void checkTask(){test.checkTask();}
-
-
-    @And("отметить задачу выполненной")
-    public void markCompleted(){test.markCompleted();}
-
-    @Then("проверить наличие выполненной задачи")
-    public void checkCompletedTask(){test.checkCompletedTask();}
+    @Then("проверить наличие созданной задачи {string}")
+    public void checkTask(String nameTask){test.checkTask(nameTask);}
 
 
-    @And("удалить выполненную задачу")
-    public void deleteCompletedTask(){test.deleteCompletedTask();}
+    @And("отметить задачу {string} выполненной")
+    public void markCompleted(String nameTask){test.markCompleted(nameTask);}
 
-    @Then("проверить, что выполненной задачи нет")
-    public void checkAfterDeleted(){test.checkAfterDeleted();}
+    @Then("проверить наличие выполненной задачи {string}")
+    public void checkCompletedTask(String nameTask){test.checkCompletedTask(nameTask);}
+
+
+    @And("удалить задачу {string}")
+    public void deleteCompletedTask(String nameTask){test.deleteCompletedTask(nameTask);}
+
+    @Then("проверить, что выполненной задачи {string} нет")
+    public void checkAfterDeleted(String nameTask){test.checkAfterDeleted(nameTask);}
 }

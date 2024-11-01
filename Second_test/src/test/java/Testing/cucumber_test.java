@@ -5,32 +5,32 @@ package Testing;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Condition.*;
+import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class cucumber_test {
 
-    String url = "https://webdriveruniversity.com/To-Do-List/index.html";
-    String nameTask = "Сделать что-то";
-    SelenideElement pathTask = $x("//li[text()=" + nameTask + "]");
-
+    public SelenideElement getPathTask(String nameTask ){
+        return $(byText(nameTask));
+    }
     public void openSite() {
-        open(url);}
+        open("https://webdriveruniversity.com/To-Do-List/index.html");}
 
-    public void printNameTask(){
+    public void printNameTask(String nameTask){
         $("input").val(nameTask).pressEnter();}
 
-    public void checkTask(){
-        pathTask.shouldBe(exist);}
+    public void checkTask(String nameTask){
+        getPathTask(nameTask).shouldBe(exist);}
 
-    public void markCompleted (){
-        pathTask.click();}
+    public void markCompleted (String nameTask){
+        getPathTask(nameTask).click();}
 
-    public void checkCompletedTask (){
-        pathTask.shouldHave(attribute("class","completed"));}
+    public void checkCompletedTask (String nameTask){
+        getPathTask(nameTask).shouldHave(attribute("class","completed"));}
 
-    public void deleteCompletedTask(){
-        $x("//li[text()=" + nameTask +"]//span").hover().click();}
+    public void deleteCompletedTask(String nameTask){
+        getPathTask(nameTask).$("span").hover().click();}
 
-    public void checkAfterDeleted(){
-        pathTask.should(disappear);}
+    public void checkAfterDeleted(String nameTask){
+        getPathTask(nameTask).should(disappear);}
 }
