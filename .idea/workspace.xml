@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f8237e5-18c2-4131-9b66-672e9012c03d" name="Changes" comment="fifthTest with cucumber">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Testing/StepDefinitions.java" afterDir="false" />
+    <list default="true" id="2f8237e5-18c2-4131-9b66-672e9012c03d" name="Changes" comment="Переделал с использования листов на лист списков. Дополнил тест до сквозного">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Testing/StepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testing/StepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Testing/fifthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testing/fifthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/ListPersons.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/ListPersons.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +191,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731566991959</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Переделал с использования листов на лист списков. Дополнил тест до сквозного">
+      <option name="closed" value="true" />
+      <created>1732002003842</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1732002003842</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,6 +254,7 @@
     <MESSAGE value="fourthTest" />
     <MESSAGE value="fifthTest" />
     <MESSAGE value="fifthTest with cucumber" />
-    <option name="LAST_COMMIT_MESSAGE" value="fifthTest with cucumber" />
+    <MESSAGE value="Переделал с использования листов на лист списков. Дополнил тест до сквозного" />
+    <option name="LAST_COMMIT_MESSAGE" value="Переделал с использования листов на лист списков. Дополнил тест до сквозного" />
   </component>
 </project>

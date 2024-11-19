@@ -6,8 +6,7 @@ import io.cucumber.datatable.DataTable;
 import java.util.List;
 import java.util.Map;
 
-import static com.codeborne.selenide.Condition.exist;
-import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -38,14 +37,36 @@ public class fifthTest {
         }
     }
 
+    public void checkPerson(String email){
+        $$("[role='gridcell']").find(text(email)).shouldBe(exist);
+    }
 
-    public void checkPersons(DataTable table) {
+    public void editPerson(DataTable tableEditPerson){
+        List<Map<String,String>> person = tableEditPerson.asMaps(String.class, String.class);
+
+        for (Map<String, String> columns : person){
+            $$("[role='row']").find(text(columns.get("Email"))).$("[title='Edit']").click();
+            $("#firstName").val(columns.get("First Name"));
+            $("#lastName").val(columns.get("Last Name"));
+            $("#userEmail").val(columns.get("Email"));
+            $("#age").val(columns.get("Age"));
+            $("#salary").val(columns.get("Salary"));
+            $("#department").val(columns.get("Department"));
+            $("#submit").click();
+        }
+    }
+
+    public void deletePerson(String email){
+        $$("[role='row']").find(text(email)).$("[title='Delete']").click();
+    }
+
+    public void checkTablePersons(DataTable table) {
         List<Map<String,String>> tablePersons = table.asMaps(String.class, String.class);
 
         for (Map<String, String> row : tablePersons) {
 
             String key = row.get("Email");
-            ElementsCollection character = $$("[role='row']").findBy(text(key)).$$("[role='gridcell']");
+            ElementsCollection character = $$("[role='row']").find(text(key)).$$("[role='gridcell']");
 
 
             System.out.println(row.get("First Name") + " = " + character.get(0).getText());
@@ -63,4 +84,7 @@ public class fifthTest {
             assertEquals(row.get("Department"), character.get(5).getText());
         }
     }
+    public void checkDeletePerson(String email){
+        $$("[role='gridcell']").find(text(email)).should(disappear);
+        }
 }
