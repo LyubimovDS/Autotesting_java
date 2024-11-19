@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f8237e5-18c2-4131-9b66-672e9012c03d" name="Changes" comment="fifthTest with cucumber">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Testing/StepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Testing/fifthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Testing/fifthTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -192,6 +194,11 @@
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1fd176ae-a0c6-4683-a6d4-c6446e1d0cf6" value="TOOL_WINDOW" />
+      </map>
+    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="User">
@@ -209,6 +216,11 @@
     </option>
     <option name="TAB_STATES">
       <map>
+        <entry key="1fd176ae-a0c6-4683-a6d4-c6446e1d0cf6">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
