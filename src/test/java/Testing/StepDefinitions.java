@@ -21,8 +21,8 @@ public class StepDefinitions {
     @And("Добавить персону")
     public void addPerson(DataTable tableAddPerson){test.addPerson(tableAddPerson);}
 
-    @And("Изменить персону")
-    public void editPerson(DataTable tableEditPerson){test.editPerson(tableEditPerson);}
+    @And("Изменить персону с почтой {string}")
+    public void editPerson(String email, DataTable tableEditPerson){test.editPerson(email, tableEditPerson);}
 
     @And("Удалить персону с почтой {string}")
     public void deletePerson(String email){test.deletePerson(email);}
