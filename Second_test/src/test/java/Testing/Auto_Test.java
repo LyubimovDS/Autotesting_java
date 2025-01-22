@@ -13,6 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Auto_Test {
     private final String BASE_URL = "https://petstore.swagger.io/v2";
+    private final int STATUS_CODE200 = 200;
 
 
     public void addPet(String petName, int petId) {
@@ -31,7 +32,7 @@ public class Auto_Test {
                 .tags(List.of(tag))
                 .status("available")
                 .build();
-        Specifications.installSpecification(requestSpec(BASE_URL),responseSpec(200));
+        Specifications.installSpecification(requestSpec(BASE_URL),responseSpec(STATUS_CODE200));
                 given()
                 .body(newPetRequest)
                         /*"{\n" +
@@ -61,7 +62,7 @@ public class Auto_Test {
 
 
     public void getPet(String petName, int petId){
-        Specifications.installSpecification(requestSpec(BASE_URL),responseSpec(200));
+        Specifications.installSpecification(requestSpec(BASE_URL),responseSpec(STATUS_CODE200));
         Response resCheckPet =
                 given()
                 .when()
@@ -98,7 +99,7 @@ public class Auto_Test {
                 .userStatus(1)
                 .build();
 
-        Specifications.installSpecification(requestSpec(BASE_URL),responseSpec(200));
+        Specifications.installSpecification(requestSpec(BASE_URL),responseSpec(STATUS_CODE200));
                  given()
                 .body(List.of(user1,user2))
                 .when()
@@ -110,7 +111,7 @@ public class Auto_Test {
 
         }
     public void checkUser(String user){
-        Specifications.installSpecification(requestSpec(BASE_URL),responseSpec(200));
+        Specifications.installSpecification(requestSpec(BASE_URL),responseSpec(STATUS_CODE200));
         DataUser users =
                 given()
                         .when()
