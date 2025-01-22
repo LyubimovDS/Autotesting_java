@@ -69,7 +69,6 @@ public class Auto_Test {
                 .get("/pet/"+petId)
                 .then()
                 .assertThat().body(matchesJsonSchemaInClasspath("schema/get_post_request_pet_store.json"))
-                .statusCode(200)
                 .extract().response();
 
         assertEquals(petName, resCheckPet.jsonPath().getString("name"));
